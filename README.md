@@ -48,8 +48,8 @@ Sistema sujungia du funkcinius modulius:
 
 ### 2. Repozitorijos klonavimas
 ```bash
-git clone https://github.com/Rimas-coding/barbora-cart-ai-assistant.git
-cd barbora-cart-ai-assistant
+git clone https://github.com/Rimas-coding/Barbora-Cart-AI-Assistant.git
+cd Barbora-Cart-AI-Assistant
 ```
 
 ### 3. Priklausomybių diegimas
