@@ -5,7 +5,7 @@ import logging
 from typing import List, Optional, Dict, Any
 from pydantic import BaseModel
 from fastapi import FastAPI, HTTPException, BackgroundTasks
-from fastapi.responses import HTMLResponse, JSONResponse
+from fastapi.responses import HTMLResponse, JSONResponse, FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 
@@ -432,6 +432,20 @@ def plan_to_cart_endpoint(req: PlanRequestModel):
         "missing": match_result["missing"],
         "shopping_list_raw": plan["shopping_list"]
     }
+
+@app.get("/favicon.ico", include_in_schema=False)
+def favicon():
+    ico_path = os.path.join(os.path.dirname(__file__), "app.ico")
+    if os.path.exists(ico_path):
+        return FileResponse(ico_path)
+    return JSONResponse(status_code=404, content={"detail": "Not found"})
+
+@app.get("/icon.png", include_in_schema=False)
+def get_icon():
+    png_path = os.path.join(os.path.dirname(__file__), "icon.png")
+    if os.path.exists(png_path):
+        return FileResponse(png_path)
+    return JSONResponse(status_code=404, content={"detail": "Not found"})
 
 # --- Pagrindinis Web UI puslapis ---
 @app.get("/", response_class=HTMLResponse, summary="Pagrindinis valdymo pultas")
