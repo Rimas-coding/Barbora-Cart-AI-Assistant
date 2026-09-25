@@ -1,6 +1,8 @@
-# 🛒 Barbora Krepšelio & Mitybos AI Asistentas
-
-Automatizuota mitybos planavimo ir prekių krepšelio surinkimo sistema Lietuvos el. maisto prekių parduotuvei [barbora.lt](https://barbora.lt/).
+<div align="center">
+  <img src="icon.png" width="110" alt="Barbora AI Ikona" style="border-radius: 24px;" />
+  <h1>🛒 Barbora Krepšelio & Mitybos AI Asistentas</h1>
+  <p><b>Automatizuota mitybos planavimo ir prekių krepšelio surinkimo sistema el. parduotuvei Barbora.lt</b></p>
+</div>
 
 Sistema sujungia du funkcinius modulius:
 1. **🥗 Asmeninio mitybos planavimo modulis**: atlieka vartotojo anamnezę, apskaičiuoja metabolinius rodiklius (BMR, TDEE, KMI), pateikia lanksčiai redaguojamą mitybos gairių lentelę ir generuoja subalansuotus dienos, kelių dienų ar savaitės mitybos planus.
@@ -46,7 +48,7 @@ Sistema sujungia du funkcinius modulius:
 
 ### 2. Repozitorijos klonavimas
 ```bash
-git clone https://github.com/JUSU_VARTOTOJAS/barbora-cart-ai-assistant.git
+git clone https://github.com/Rimas-coding/barbora-cart-ai-assistant.git
 cd barbora-cart-ai-assistant
 ```
 
