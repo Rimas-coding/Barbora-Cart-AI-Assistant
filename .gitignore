@@ -1,0 +1,70 @@
+# =======================================================
+# Svarbūs saugumo nustatymai (niekada neviešinti naršyklės sesijų)
+# =======================================================
+chrome_user_data/
+chrome_profile/
+
+# =======================================================
+# Python vykdymo talpykla ir virtualios aplinkos
+# =======================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtualios aplinkos
+.venv/
+venv/
+ENV/
+env/
+
+# Testavimo ir linterių talpyklos
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# =======================================================
+# Slaptažodžiai, tokenai ir aplinkos kintamieji
+# =======================================================
+.env
+*.env
+!.env.example
+
+# =======================================================
+# Redaktorių ir OS laikini failai
+# =======================================================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# =======================================================
+# Dideli archyvai ir žurnalai
+# =======================================================
+*.log
+*.zip
+*.tar.gz
